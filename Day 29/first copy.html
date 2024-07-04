@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Handling</title>
+</head>
+<body>
+    <input type="text" id="a" onkeypress="abcd()">
+    <input type="text" id="b" onkeydown="abcd()">
+    <input type="text" id="rest">
+    <!-- <button onclick="abcd()">Calculate</button> -->
+    <script>
+        function abcd(){
+            var num1=document.getElementById("a").value;
+            var num2=document.getElementById("b").value;
+            var res=parseInt(num1)+parseInt(num2);
+            // return res;
+            document.getElementById("rest").value=res;
+            // alert("Sum = "+res);
+        }
+    </script>
+</body>
+</html>

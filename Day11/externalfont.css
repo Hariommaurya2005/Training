@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'hariom';
+    src: url('Blacksword.otf');
+}
+
+
+body {
+    font-family: hariom;
+}

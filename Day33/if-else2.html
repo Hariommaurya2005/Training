@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input type="text" name="" id="num">
+    <button onclick="checkforGrade()">Grade Chack</button>
+
+    <script>
+        function checkforGrade() {
+            var x = parseInt(document.getElementById('num').value);
+            if (80 < x && x <= 100)
+                alert("A Grad");
+            else
+                if (70 < x && x <= 80)
+                    alert("B Grad")
+                else
+                    if (60 < x && x <= 70)
+                        alert("C Grad")
+                    else
+                        if (50 <= x && x <= 60)
+                            alert("D Grad")
+                        else
+                            if (x < 50)
+                                alert("FAIL");
+                            else
+                                alert("INVALID NUMBER");
+
+        }
+    </script>
+</body>
+
+</html>

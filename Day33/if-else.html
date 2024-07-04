@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input type="text" name="" id="num">
+    <button onclick="checkforevenodd()">EVEN / ODD</button>
+    <button onclick="positive()">POSTIVE / NEGATIVE</button>
+    <script>
+        function checkforevenodd() {
+            var x = parseInt(document.getElementById('num').value);
+            if (x % 2 == 0)
+                alert("EVEN NUMBER");
+            else
+             alert("ODD NUMBER");
+        }
+
+        function positive() {
+            var x = parseInt(document.getElementById('num').value);
+            if (x > 0)
+                alert("POSTIVE NUMBER");
+            else if (x < 0)
+                alert("NEGATIVE NUMBER");
+            else
+                alert("ZERO");
+        }
+    </script>
+</body>
+
+</html>

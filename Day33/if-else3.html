@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input type="text" name="" id="num">
+    <button onclick="checkforLeapYear()">Leap Year Chack</button>
+    <script>
+        function checkforLeapYear() {
+            var x = parseInt(document.getElementById('num').value);
+
+
+            if (x >= 1000) {
+                if (x <= 9999) {
+                    if (x % 4 == 0) {
+                        alert("Leap Year");
+                    }
+                    else
+                        alert("Not Leap Year");
+                }
+                else
+                    alert("Year must be less than 9999");
+            }
+            else
+                alert("Year must be greater than 1000");
+        }
+    </script>
+</body>
+
+</html>

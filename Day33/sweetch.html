@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input type="text" name="" id="num1" >
+    <select name="" id="op">
+        <option value=""> select op</option>
+        <option value="+">ADD</option>
+        <option value="-">Sub</option>
+        <option value="*">Mul</option>
+        <option value="/">Div</option>
+    </select>
+    <input type="text" name="" id="num2" >
+   
+    
+    
+    <input type="text" name="" id="res" >
+    <button onclick="op()">Calculate</button>
+    
+    
+
+    <script>
+        function op(){
+            var x=parseInt(document.getElementById('num1').value);
+            var y=parseInt(document.getElementById('num2').value);
+            var op=document.getElementById('op').value;
+            var res = "";
+            switch(op){
+                case '+': 
+                res = x+y;
+                break;
+                case '-':
+                    res= x-y;
+                    break;
+                    case '*':
+                      res=x*y;
+                      break;
+                      case '/':
+                        res=x/y;
+                        break;
+            }
+
+            document.getElementById('res').value=res;
+            
+            
+                
+            }
+
+            
+        
+    </script>
+
+</html>

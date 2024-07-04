@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input type="text" name="" id="num">
+    <button onclick="ClassifyAge()">ClassifyAge</button>
+    <script>
+        function ClassifyAge() {
+            var x = parseInt(document.getElementById('num').value);
+            if (x > 0 && x <= 12)
+                alert("Child")
+            else if (x >= 13 && x <= 19)
+                alert("Teeneger")
+            else if (x >= 20 && x <= 64)
+                alert("Adult")
+            else if (x >= 65)
+                alert("Senior")
+            else
+                alert("Invalid age")
+        }
+    </script>
+</body>
+
+</html>

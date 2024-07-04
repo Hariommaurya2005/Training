@@ -1,0 +1,28 @@
+@font-face{
+    font-family: Hariom2;
+    src: url('fonts/Blacksword.otf');
+}
+
+@font-face {
+    font-family: Hindi;
+    src: url('fonts/Kruti\ Dev\ 010\ Regular.ttf');
+}
+
+@font-face {
+    font-family: Poppins;
+    src: url('fonts/Poppins/Poppins-BoldItalic.ttf');
+}
+
+
+div{
+    font-family: Poppins;
+}
+
+.english{
+    font-family: Hariom2;
+}
+
+.hfont{
+    font-family: Hindi;
+}
+

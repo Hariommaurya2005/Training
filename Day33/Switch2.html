@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input type="text" name="" id="num">
+    <button onclick="CheckDay()">Day</button>
+    <select name="" id="Day">
+        <option value="">Select Day Number</option>
+        <option>1</option>
+        <option>2</option>
+        <option>3</option>
+        <option>4</option>
+        <option>5</option>
+        <option>6</option>
+        <option>7</option>
+    </select>
+
+    <script>
+        function CheckDay() {
+            var Weekday = document.getElementById('Day').value;
+            var res = "";
+            switch (Weekday) {
+                case '1':
+                    res="Sunday";
+                    break;
+                case '2':
+                    res="Monday";
+                    break;
+                case '3':
+                    res="Tuesday";
+                    break;
+                case '4':
+                    res="Wedensday";
+                    break;
+                case '5':
+                    res="Thursday";
+                    break;
+                case '6':
+                    res="Friday";
+                    break;
+                case '7':
+                    res="Saturday";
+            }
+
+
+            document.getElementById('num').value=res;
+        }
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="num1">
+    <input type="text" id="num2">
+    <input type="text"  id="num3">
+    <button onclick="number()">Check Largest Number</button>
+
+    <script>
+        function number(){
+            var a=parseInt(document.getElementById('num1').value);
+            var b=parseInt(document.getElementById('num2').value);
+            var c=parseInt(document.getElementById('num3').value);
+            if(a>b && a>c)
+alert(a+" is the Gratest Number")
+else if(b>a && b>c)
+alert(b+" is the Gratest Number")
+else
+alert(c+" is the Gratest Number")
+        }
+    </script>
+            
+</body>
+</html>

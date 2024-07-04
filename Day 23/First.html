@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="a">
+    <input type="text" id="b">
+    <input type="text" id="c">
+    <button onclick="hariom()">Calculate</button>
+    <div id="result">
+        Here you will get the result
+    </div>
+    <script>
+        function hariom()
+        {
+            var num1=document.getElementById("a").value;
+            var num2=document.getElementById("b").value;
+            // var res=num1+num2;
+            var res=parseInt(num1)+parseInt(num2);
+            document.getElementById('c').value=res;
+            document.getElementById("result").innerHTML=res;
+
+        }
+    </script>
+</body>
+</html>

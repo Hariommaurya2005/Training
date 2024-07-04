@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // var x= document
+    </script>
+</head>
+<body>
+    <div id="pehla">
+        Hello Hariom
+    </div>
+    <div id="pehla" class="first">
+        Hello Aditya
+    </div>
+    <div id="pehla" class="first">
+        Hello Aditya
+    </div>
+    <div id="pehla" class="first">
+        Hello Aditya
+    </div>
+    <div id="pehla" class="first">
+        Hello Aditya
+    </div>
+    <input type="text" id="abcd">
+    <button onclick="demo()">Click me</button>
+    <script>
+        var x=prompt("Enter Your Name ");
+        var d=document.getElementsByTagName("div");
+        d[2].innerHTML="Good Morning "+x;
+    
+    function demo(){
+            var name=document.getElementById("abcd").value;
+            d[3].innerHTML="Hello "+name;
+        
+        }
+    
+    </script>
+</body>
+</html>

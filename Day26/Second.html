@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="">
+        <label for="first" > Enter first number</label>
+        <input type="text" name="Number1" id="first"><br><br>
+        <label for="second" > Enter Second number</label>
+        <input type="text" name="Number2" id="second"><br><br>
+        <label for="Result" > Result</label>
+        <input type="text" name="Number2" id="Result">
+        
+        <button type="button" onclick="Big()">Click
+        </button></form>
+        <script>
+            function Big(){
+                var a=parseInt(document.getElementById('first').value);
+                var b=parseInt(document.getElementById('second').value); 
+                var c=document.getElementById('Result');
+                if(a>b)
+                c.value=a;
+            else
+            c.value=b;
+            }
+        </script>
+</body>
+</html>

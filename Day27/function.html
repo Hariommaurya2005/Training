@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="a">
+    <button onclick="sq()">SQUARE</button>
+    <!-- <input type="text" id="result"> -->
+    <div id="result"></div>
+    <script>
+        function sq(){
+            var x=document.getElementById('a').value;
+            var num= x;
+            var result=parseInt(num)*parseInt(num);
+            // document.getElementById('result').value="Square is "+result;
+            document.getElementById('result').innerHTML="Square is "+result;
+        }
+    </script>
+</body>
+</html>
