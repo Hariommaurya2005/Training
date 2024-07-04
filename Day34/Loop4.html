@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" name="" id="num">
+    <button onclick="fact()">number</button>
+    <script>
+        function fact(){
+       
+        var a=parseInt(document.getElementById('num').value);
+        var fact=1;
+        while(a>=1){
+            fact=fact*a;
+            a--;
+        }
+        alert(fact);
+    }
+        
+        </script>
+</body>
+</html>
