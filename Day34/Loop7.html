@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" name="" id="String">
+    <button onclick="reverseaString()">Reverse</button>
+
+
+<script>
+function reverseaString(){
+    var a =document.getElementById('String').value;
+var reversed=" ";
+var index=a.length-1;
+while(index>=0){
+    reversed=reversed+a[index];
+    index--;
+}
+document.write(reversed)
+}
+
+</script>
+</body>
+</html>

@@ -1,25 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-
 <body>
-    <button onclick="number()">Number</button>
-
+    <button onclick=" EvenNumber()">EvenNumber</button>
     <script>
-        function number() {
-            var a = 1;
-            while (a <=100 ){
-            document.write(a+"<br>");
-            a++;
-            }
+        function EvenNumber(){
+           
+             for(n=1;n<11;n++){
+            var result=n*2;
+            document.write(result +"<br>")
+             }
         }
-     
     </script>
 </body>
-
 </html>
