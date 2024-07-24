@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" name="" id="num1">
+    <input type="text" name="" id="num2">
+    <button onclick="Sum(num1.value,num2.value)">Sum</button>
+    <script>
+        // function Sum(x,y){
+        //     // var a=parseInt(document.getElementById('num1').value)
+        //     // var b=parseInt(document.getElementById('num2').value)
+        //     var a=parseInt(x)
+        //     var b=parseInt(y)
+        //    var sum =a+b;
+
+        //    document.write(sum);
+        // }
+       
+        var Sum = (x,y) => {
+            var a=parseInt(x)
+            var b=parseInt(y)
+           var sum =a+b;
+            document.write(sum);
+            return sum;
+        }
+
+        var hariom = (name ="Himanshu") =>{
+            console.log("Om Namah Shivay");
+            console.log("Har Har Mahadev "+name);
+        }
+    </script>
+</body>
+</html>
