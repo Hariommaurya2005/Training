@@ -10,6 +10,7 @@
     <div id="di">Mai ek div hu.</div>
     <input type="text" name="" id="n1">
     <input type="text" name="" id="n2">
+    <input type="text" name="" id="n3">
     <script>
         var n1=document.getElementById('n1');
         var n2=document.getElementById('n2');
@@ -23,12 +24,15 @@
         n2.addEventListener('keyup',function(event){
             if(event.keyCode==13)
         {
+         var n3=document.getElementById('n3');
             var a= parseInt(n1.value);
             var b= parseInt(n2.value);
-            var c=a+b;
-            alert(c);
+            var n3=a+b;
+            document.getElementById('n3').value=n3;
+          
         }
         })
+       
 
 
         var x=document.getElementById('di');

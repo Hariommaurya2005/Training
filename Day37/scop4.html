@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" name="" id="n1">
+    <input type="text" name="" id="n2">
+    <script>
+        var n1=document.getElementById('n1');
+        var n2=document.getElementById('n2');
+        n1.addEventListener('keyup',function(event){
+            if(event.keyCode==13)
+        {
+            n2.focus();
+        }
+        });
+
+        n2.addEventListener('mouseleave',function(event){
+            
+        {
+            var a= parseInt(n1.value);
+            var b= parseInt(n2.value);
+            var c=a+b;
+            alert(c);
+        }
+        })
+    </script>
+
+</body>
+</html>
