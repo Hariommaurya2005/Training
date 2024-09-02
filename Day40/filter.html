@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filter Function</title>
+</head>
+<body>
+    <script>
+        let ar=[1,2,34,4,5,6,7];
+        // let b = [];
+    //     for (i=0;i<ar.length;i++)
+    // {
+    //     if(ar[i]%2==0)
+    //     b.push(ar[i]);
+    // }
+    // b = ar.filter((num) => num%2!=0);
+    // b = ar.filter(function(num){
+    //     return num%2!=0;
+    // });
+
+    console.time("Filter Method");
+
+let b = ar.filter(function(num) {
+    return num % 2 != 0;
+});
+
+console.timeEnd("Filter Method");
+
+console.time("For Loop");
+
+let c = [];
+for (let i = 0; i < ar.length; i++) {
+    if (ar[i] % 2 != 0) {
+        c.push(ar[i]);
+    }
+}
+
+console.timeEnd("For Loop");
+
+
+    console.log(ar);
+    console.log(b);
+
+    </script>
+</body>
+</html>
