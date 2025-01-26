@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reduce Function</title>
+</head>
+
+<body>
+    <script>
+        let ar = [33,22,45,21, 44,66, 55,88];
+        a = ar.reduce((x, y) => {  // x = accumulator, y = current value
+
+            // console.log(x + " ----- " + y);
+            // return (y%2==0) ? x+y : x ;
+            // if(y%2==0)
+            return x + y;
+            // else
+            // return x;
+        }, 0);
+        
+        // const max = ar.reduce((accumulator, currentValue) => {
+            
+        //     console.log(accumulator+ " ----- " + currentValue);
+        //     return currentValue > accumulator ? currentValue : accumulator;
+        // }, 0);
+
+        console.log(ar);
+        max=ar[0];
+        for(i=0;i<ar.length;i++)
+        {
+            
+            if(ar[i]>max)
+            {max=ar[i];
+                console.log(ar[i]+" ===changed==== "+max);
+                
+            }
+            console.log(ar[i]+" ======= "+max);
+        
+
+        }
+
+        document.write(max);
+    </script>
+</body>
+
+</html>
