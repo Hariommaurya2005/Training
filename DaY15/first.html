@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        div{
+        div {
             width: 200px;
             height: 200px;
             border: 2px solid green;
@@ -19,59 +20,63 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            animation-iteration-count: infinite;
-            /* animation-fill-mode: forwards; */
-            /* animation-direction: normal; */
+            animation-iteration-count: infinite; 
+            animation-fill-mode: forwards;
+             animation-direction: normal;
+
+            /* @keyframes duration | easing-function | delay |
+    iteration-count | direction | fill-mode | play-state | name */
+            /* animation: 5s linear 5s infinite reverse both paused rajababu; */
 
         }
 
         /* div:hover{ */
-             /* width: 300px; */
-            /* height: 300px;  */
-             /* font-size: 2em;  */
-            /* transform: rotateY(270deg);  */
-             /* transform: scale(2) ; */
-             /* transform: skew(45deg); */
-             /* transform: translate(500px, 20px); */
-             /* transform: translateY(200px);  */
+        /* width: 300px; */
+        /* height: 300px;  */
+        /* font-size: 2em;  */
+        /* transform: rotateY(270deg);  */
+        /* transform: scale(2) ; */
+        /* transform: skew(45deg); */
+        /* transform: translate(500px, 20px); */
+        /* transform: translateY(200px);  */
         /* } */
 
 
         @keyframes rajababu {
-            from{
-                top:200px;
+            from {
+                top: 200px;
             }
 
-            to{
-                top:0px;
-            } 
+            to {
+                top: 0px;
+            }
 
-         0%{
-                top:0px;
+            0% {
+                top: 0px;
                 left: 0px;
             }
 
-            25%{
-                top:0px;
-                left:500px;
+            25% {
+                top: 0px;
+                left: 500px;
                 font-size: 2em;
             }
 
-            50%{
-                top:500px;
-                left:500px;
-                border-radius: 50%      ;
+            50% {
+                top: 500px;
+                left: 500px;
+                border-radius: 50%;
             }
 
-            75%{
-                top:500px;
-                left:0px;
+            75% {
+                top: 500px;
+                left: 0px;
             }
 
-            100%{
-                top:0px;
-                left:0px;
-                font-size: 3em ;
+            100% {
+                top: 0px;
+                left: 0px;
+                font-size: 3em;
             }
 
 
@@ -79,15 +84,13 @@
 
 
         }
-
-
-
-
     </style>
 </head>
+
 <body>
     <div>
         Hello
     </div>
 </body>
+
 </html>
